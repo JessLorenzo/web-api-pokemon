@@ -1,0 +1,79 @@
+body {
+  background-color: #30a7d7;
+  font-family: arial, sans-serif;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &__title {
+    font-size: 3rem;
+    color: #e6bc2f;
+  }
+
+  &__image {
+    width: 7rem;
+  }
+}
+
+.color {
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    font-size: 2rem;
+    color: #e3350d;
+  }
+
+  &__selection {
+    border: 2px solid white;
+    padding: 1rem;
+    background-color: #4dad5b;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: white;
+  }
+
+  &__button {
+    margin-bottom: 2.5rem;
+    padding: 0.5rem;
+    background-color: #ee6b2f;
+    color: white;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    box-shadow: 5px 5px 5px black;
+
+    &:hover {
+      background-color: #1b53ba;
+      cursor: pointer;
+    }
+  }
+}
+
+.pokemon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__image {
+    width: 20rem;
+  }
+
+  &__name {
+    align-self: center;
+    font-size: 3rem;
+    text-transform: capitalize;
+    margin-top: 1rem;
+    margin-bottom: 0rem;
+  }
+}

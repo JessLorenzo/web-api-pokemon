@@ -5,12 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://unpkg.com/axios/dist/axios.min.js" defer></script>
     <script src="/script.js" defer></script>
-    <title>Document</title>
+    <link rel="stylesheet" href="/style.css" />
+    <title>Who's your Pokemon?</title>
   </head>
   <body>
-    <h1>What pokemon are you?</h1>
+    <section class="main">
+    <h1 class="main__title">What Pokemon are you?</h1>
+    <img class="main__image" src="./assets/images/Poke_Ball.webp" alt="pokemon ball">
     <form class="color">
-      <h2>Select your favorite color:</h2>
+      <h2 class="color__title">Select your favorite color:</h2>
       <select class="color__selection">
         <option value="black">Black</option>
         <option value="blue">Blue</option>
@@ -23,8 +26,10 @@
         <option value="white">White</option>
         <option value="yellow">Yellow</option>
       </select>
-      <button>SUBMIT</button>
+      <button class="color__button">SUBMIT</button>
     </form>
     <div class="pokemon"></div>
+    </div>
+  </section>
   </body>
 </html>
